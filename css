@@ -4,7 +4,6 @@
    padding:0;
   }
   
- [tabindex="-1"]:focus{outline:0!important}hr{box-sizing:content-box;height:0;overflow:visible}
   
  y.new:after{content:'\f021';position:absolute;font-weight: bold;display:inline-block;font-family:fontawesome}
 
@@ -22,14 +21,14 @@
     background-color: #e20808;
 }
 
-htmlBtn:hover {
+htmlBtn: hover {
   background-color:#150000;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.9);
 }
   
 
     .form-control{
-      display:block;
+      display: block;
       width:100%;
       height:calc(2.25rem + 2px);
       padding:.375rem .75rem;
@@ -43,6 +42,72 @@ htmlBtn:hover {
       border-radius:.25rem;
       transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}
 }
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid #ffffff29;
+    border-radius: 10px;
+}
+
+.bg-info {
+    color: white;
+    background-color: rgb(17, 21, 56)!important;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background-color: #22315d;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-family: "hammersmith one";
+    font-size: 12px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
  .mt-5, .my-5 {
     margin-top: 1rem!important;
 }
@@ -50,3 +115,42 @@ htmlBtn:hover {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
 }
+
+.col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
