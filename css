@@ -1,53 +1,50 @@
- 
- body {
-   margin:0;
-   padding:0;
-  }
-  
-  
- y.new:after{content:'\f021';position:absolute;font-weight: bold;display:inline-block;font-family:fontawesome}
+/* Reset default margin and padding for all elements */
+body {
+   margin: 0;
+   padding: 0;
+}
 
-  htmlBtn {
+/* Style for a button with the class "htmlBtn" */
+.htmlBtn {
     border-radius: 10px;
     font-size: 15px;
     padding: 5px 10px;
     padding-right: 25px;
-    font-family: 'Google Sans';
-    LETTER-SPACING: 1PX;
+    font-family: 'Google Sans', sans-serif; /* Corrected font family */
+    letter-spacing: 1px; /* Corrected property */
     cursor: pointer;
-    font-weight:600;
+    font-weight: 600;
     color: white;
     transition-duration: 0.4s;
     background-color: #e20808;
 }
 
-htmlBtn: hover {
-  background-color:#150000;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.9);
-}
-  
-
-    .form-control{
-      display: block;
-      width:100%;
-      height:calc(2.25rem + 2px);
-      padding:.375rem .75rem;
-      font-family: "hammersmith one";
-      font-size: 12px;    
-      line-height:1.5;
-      color:#495057;
-      background-color:#fff;
-      background-clip:padding-box;
-      border:1px solid #ced4da;
-      border-radius:.25rem;
-      transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+.htmlBtn:hover {
+    background-color: #150000;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.9);
 }
 
+/* Style for a form input with the class "form-control" */
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-family: "hammersmith one", sans-serif; /* Corrected font family */
+    font-size: 12px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Style for a card */
 .card {
     position: relative;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
@@ -56,20 +53,22 @@ htmlBtn: hover {
     border-radius: 10px;
 }
 
+/* Style for an info background */
 .bg-info {
     color: white;
-    background-color: rgb(17, 21, 56)!important;
+    background-color: rgb(17, 21, 56) !important;
 }
 
+/* Style for a card header */
 .card-header {
-    padding: .75rem 1.25rem;
+    padding: 0.75rem 1.25rem;
     margin-bottom: 0;
-    background-color: rgba(0,0,0,.03);
-    border-bottom: 1px solid rgba(0,0,0,.125);
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
+/* Style for card body */
 .card-body {
-    -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding: 1.25rem;
     background-color: #22315d;
@@ -77,80 +76,37 @@ htmlBtn: hover {
     border-bottom-left-radius: 10px;
 }
 
+/* Style for a row */
 .row {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
 
-
+/* Style for a form group */
 .form-group {
     margin-bottom: 1rem;
 }
 
-
-.form-control {
-    display: block;
-    width: 100%;
-    height: calc(2.25rem + 2px);
-    padding: .375rem .75rem;
-    font-family: "hammersmith one";
-    font-size: 12px;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
- .mt-5, .my-5 {
-    margin-top: 1rem!important;
-}
+/* Style for a column in a 6-column grid */
 .col-md-6 {
-    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
 }
 
+/* Style for a column in a 12-column grid */
 .col-md-12 {
-    -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
 }
 
+/* Additional custom styles can be added as needed */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Style for pseudo-element using FontAwesome icon */
+.y.new:after {
+    content: '\f021';
+    position: absolute;
+    font-weight: bold;
+    display: inline-block;
+    font-family: FontAwesome, sans-serif; /* Assuming you have FontAwesome available */
+}
